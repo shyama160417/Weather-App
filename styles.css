@@ -1,0 +1,146 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    color: white;
+}
+
+.container{
+    /* background-color: black; */
+    /* background: url(media/sunny.svg); */
+    /* opacity: 0.8; */
+    /* background-size: cover; */
+    height: auto;
+    width: 500px;
+    /* border: 1px solid white; */
+    background: rgb(104,69,84);
+    background: radial-gradient(circle, rgba(104,69,84,1) 0%, rgba(11,62,122,1) 100%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.searchbox{
+    /* border: 1px solid white; */
+    margin-bottom: 10px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: space-between;
+}
+
+h1, h2, p{
+    color: white;
+    margin: 0;
+}
+
+.temp{
+    font-family: "Roboto", "sans-serif";
+    font-weight: 100;
+}
+
+input{
+    height: 30px;
+    width: 220px;
+    border-radius: 15px;
+    padding-left: 15px;
+    border: none;
+}
+
+.btn{
+    height: 40px;
+    width: 40px; 
+    border-radius: 50%;
+    border: none;
+    
+}
+
+.btn img{
+    width: 100%;
+    /* height: 100%; */
+}
+
+.weather-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lato", "sans-serif";
+}
+
+.weather{
+    font-weight: 500;
+    font-size: medium;
+}
+
+.feels{
+    font-size: small;
+    display: flex;
+    align-items: center;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.high-low{
+    display: flex;
+    font-size: small;
+    width: 150px;
+    /* border: 1px solid white; */
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.wh{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    margin: 10px;
+
+    /* border: 1px solid white; */
+    
+}
+
+.wind-section, .humidity-section{
+    background: rgb(104,69,84);
+    background: radial-gradient(circle, rgba(104,69,84,1) 0%, rgba(70,97,130,1) 100%);
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    position: relative;
+    /* justify-content: center; */
+    /* border: 1px solid white; */
+}
+
+.w-speed{
+    position: absolute;
+    top: 75px;
+    left: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.percentage{
+    font-size: larger;
+    position: absolute;
+    top: 60px;
+}
+
+.error{
+    display: none;
+    color: red;
+    font-size: xx-large;
+}
